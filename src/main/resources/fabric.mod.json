@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "skinmod",
+  "version": "${version}",
+  "name": "Custom Skin Loader",
+  "description": "A client-side mod to set custom skins.",
+  "authors": [
+    "Me"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/skinmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.skinmod.client.SkinModClient"
+    ]
+  },
+  "mixins": [
+    "skinmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
