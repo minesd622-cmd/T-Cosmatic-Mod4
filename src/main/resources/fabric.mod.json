@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "skinmod",
+  "id": "customskinloader",
   "version": "${version}",
   "name": "Custom Skin Loader",
-  "description": "A client-side mod to set custom skins.",
+  "description": "Allows players to set a custom skin via URL (Client Side). Compatible with PojavLauncher.",
   "authors": [
     "Me"
   ],
@@ -12,15 +12,15 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "MIT",
-  "icon": "assets/skinmod/icon.png",
+  "icon": "assets/customskinloader/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.example.skinmod.client.SkinModClient"
+      "com.example.customskin.CustomSkinClient"
     ]
   },
   "mixins": [
-    "skinmod.mixins.json"
+    "customskinloader.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.5",
